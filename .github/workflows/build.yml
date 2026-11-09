@@ -1,0 +1,59 @@
+name: Build Pitcher
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  # Быстрая проверка DSP-ядра: латентность, точность питча, форманты, стабильность
+  dsp-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Python deps
+        run: pip install numpy scipy
+      - name: Build test CLI
+        run: g++ -O2 -std=c++17 -o pitcher_cli Tests/pitcher_cli.cpp
+      - name: Run DSP tests
+        run: python3 Tests/run_tests.py ./pitcher_cli
+
+  # Сборка VST3 для Windows
+  build-windows-vst3:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -S . -B build -A x64
+      - name: Build VST3 (Release)
+        run: cmake --build build --config Release --target Pitcher_VST3 --parallel
+      - name: Upload plugin
+        uses: actions/upload-artifact@v4
+        with:
+          name: EXPitch-VST3-Windows
+          path: build/Pitcher_artefacts/Release/VST3/EXPitch.vst3
+          if-no-files-found: error
+
+  # Установщик EXPitch_Setup.exe: стилизованное окно, выбор папки, плагин вшит внутрь
+  build-installer:
+    needs: build-windows-vst3
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download built plugin
+        uses: actions/download-artifact@v4
+        with:
+          name: EXPitch-VST3-Windows
+          path: payload/EXPitch.vst3
+      - name: Pack payload.zip
+        run: python -c "import shutil; shutil.make_archive('Installer/payload','zip','payload','EXPitch.vst3')"
+      - name: Configure installer
+        run: cmake -S Installer -B build_installer -A x64
+      - name: Build installer (Release)
+        run: cmake --build build_installer --config Release --parallel
+      - name: Upload installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: EXPitch-Setup
+          path: build_installer/EXPitchSetup_artefacts/Release/EXPitch_Setup.exe
+          if-no-files-found: error
