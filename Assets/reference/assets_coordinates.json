@@ -1,0 +1,630 @@
+{
+  "project": "EXPitch",
+  "source_reference": "image(5).png",
+  "panel_source_rect_xywh": [
+    89,
+    16,
+    964,
+    515
+  ],
+  "panel_source_size_px": [
+    964,
+    515
+  ],
+  "recommended_logical_size_px": [
+    960,
+    512
+  ],
+  "retina_size_px": [
+    1920,
+    1024
+  ],
+  "ratio": "1.875:1",
+  "outside_background_removed": true,
+  "note": "The plugin panel alone was isolated from the supplied image. No design changes were made to the visible panel. Knob pointers were inpainted from the no-indicator background layer and rebuilt as pivot-aligned independent layers; sprite sheets are 128 frames.",
+  "coordinates": {
+    "title_expitch": {
+      "original_px": [
+        504,
+        34,
+        137,
+        41
+      ],
+      "panel_960x512": [
+        413.278,
+        17.895,
+        136.432,
+        40.761
+      ],
+      "panel_1920x1024": [
+        826.556,
+        35.79,
+        272.863,
+        81.522
+      ]
+    },
+    "core_default": {
+      "original_px": [
+        874,
+        31,
+        146,
+        50
+      ],
+      "panel_960x512": [
+        781.743,
+        14.913,
+        145.394,
+        49.709
+      ],
+      "panel_1920x1024": [
+        1563.485,
+        29.825,
+        290.788,
+        99.417
+      ]
+    },
+    "pitch_label": {
+      "original_px": [
+        257,
+        111,
+        67,
+        35
+      ],
+      "panel_960x512": [
+        167.303,
+        94.447,
+        66.722,
+        34.796
+      ],
+      "panel_1920x1024": [
+        334.606,
+        188.893,
+        133.444,
+        69.592
+      ]
+    },
+    "pitch_knob": {
+      "original_px": [
+        202,
+        145,
+        174,
+        174
+      ],
+      "panel_960x512": [
+        112.531,
+        128.249,
+        173.278,
+        172.986
+      ],
+      "panel_1920x1024": [
+        225.062,
+        256.497,
+        346.556,
+        345.973
+      ]
+    },
+    "pitch_mix": {
+      "original_px": [
+        218,
+        325,
+        46,
+        36
+      ],
+      "panel_960x512": [
+        128.465,
+        307.2,
+        45.809,
+        35.79
+      ],
+      "panel_1920x1024": [
+        256.929,
+        614.4,
+        91.618,
+        71.581
+      ]
+    },
+    "pitch_mix_value": {
+      "original_px": [
+        304,
+        325,
+        56,
+        36
+      ],
+      "panel_960x512": [
+        214.108,
+        307.2,
+        55.768,
+        35.79
+      ],
+      "panel_1920x1024": [
+        428.216,
+        614.4,
+        111.535,
+        71.581
+      ]
+    },
+    "formanto_label": {
+      "original_px": [
+        515,
+        111,
+        123,
+        35
+      ],
+      "panel_960x512": [
+        424.232,
+        94.447,
+        122.49,
+        34.796
+      ],
+      "panel_1920x1024": [
+        848.465,
+        188.893,
+        244.979,
+        69.592
+      ]
+    },
+    "formanto_knob": {
+      "original_px": [
+        488,
+        145,
+        174,
+        174
+      ],
+      "panel_960x512": [
+        397.344,
+        128.249,
+        173.278,
+        172.986
+      ],
+      "panel_1920x1024": [
+        794.689,
+        256.497,
+        346.556,
+        345.973
+      ]
+    },
+    "formanto_mix": {
+      "original_px": [
+        501,
+        325,
+        49,
+        36
+      ],
+      "panel_960x512": [
+        410.29,
+        307.2,
+        48.797,
+        35.79
+      ],
+      "panel_1920x1024": [
+        820.581,
+        614.4,
+        97.593,
+        71.581
+      ]
+    },
+    "formanto_mix_value": {
+      "original_px": [
+        589,
+        325,
+        59,
+        36
+      ],
+      "panel_960x512": [
+        497.925,
+        307.2,
+        58.755,
+        35.79
+      ],
+      "panel_1920x1024": [
+        995.851,
+        614.4,
+        117.51,
+        71.581
+      ]
+    },
+    "fine_label": {
+      "original_px": [
+        832,
+        111,
+        59,
+        35
+      ],
+      "panel_960x512": [
+        739.917,
+        94.447,
+        58.755,
+        34.796
+      ],
+      "panel_1920x1024": [
+        1479.834,
+        188.893,
+        117.51,
+        69.592
+      ]
+    },
+    "fine_knob": {
+      "original_px": [
+        770,
+        145,
+        174,
+        174
+      ],
+      "panel_960x512": [
+        678.174,
+        128.249,
+        173.278,
+        172.986
+      ],
+      "panel_1920x1024": [
+        1356.349,
+        256.497,
+        346.556,
+        345.973
+      ]
+    },
+    "fine_output": {
+      "original_px": [
+        771,
+        325,
+        76,
+        36
+      ],
+      "panel_960x512": [
+        679.17,
+        307.2,
+        75.685,
+        35.79
+      ],
+      "panel_1920x1024": [
+        1358.34,
+        614.4,
+        151.369,
+        71.581
+      ]
+    },
+    "fine_output_value": {
+      "original_px": [
+        875,
+        325,
+        66,
+        36
+      ],
+      "panel_960x512": [
+        782.739,
+        307.2,
+        65.726,
+        35.79
+      ],
+      "panel_1920x1024": [
+        1565.477,
+        614.4,
+        131.452,
+        71.581
+      ]
+    },
+    "quality_dropdown": {
+      "original_px": [
+        302,
+        383,
+        253,
+        66
+      ],
+      "panel_960x512": [
+        212.116,
+        364.862,
+        251.95,
+        65.616
+      ],
+      "panel_1920x1024": [
+        424.232,
+        729.724,
+        503.9,
+        131.231
+      ]
+    },
+    "voice_range_dropdown": {
+      "original_px": [
+        590,
+        383,
+        253,
+        66
+      ],
+      "panel_960x512": [
+        498.921,
+        364.862,
+        251.95,
+        65.616
+      ],
+      "panel_1920x1024": [
+        997.842,
+        729.724,
+        503.9,
+        131.231
+      ]
+    },
+    "preserve_toggle": {
+      "original_px": [
+        447,
+        465,
+        69,
+        44
+      ],
+      "panel_960x512": [
+        356.515,
+        446.384,
+        68.714,
+        43.744
+      ],
+      "panel_1920x1024": [
+        713.029,
+        892.769,
+        137.427,
+        87.487
+      ]
+    },
+    "preserve_text": {
+      "original_px": [
+        524,
+        468,
+        175,
+        37
+      ],
+      "panel_960x512": [
+        433.195,
+        449.367,
+        174.274,
+        36.784
+      ],
+      "panel_1920x1024": [
+        866.39,
+        898.734,
+        348.548,
+        73.569
+      ]
+    }
+  },
+  "knobs": {
+    "pitch": {
+      "base_file": "knobs/pitch/pitch_base_174.png",
+      "pointer_file": "knobs/pitch/pitch_pointer_up_174.png",
+      "sprite_sheet": "knobs/pitch/pitch_128_frames_16x8.png",
+      "frame_count": 128,
+      "columns": 16,
+      "rows": 8,
+      "frame_size_px": [
+        173,
+        173
+      ],
+      "pivot_px": [
+        86.5,
+        86.5
+      ],
+      "zero_angle_frame": 64,
+      "rotation_range_degrees": [
+        -135,
+        132.89
+      ],
+      "coordinate_in_original_image": [
+        202,
+        145,
+        173,
+        173
+      ]
+    },
+    "formanto": {
+      "base_file": "knobs/formanto/formanto_base_174.png",
+      "pointer_file": "knobs/formanto/formanto_pointer_up_174.png",
+      "sprite_sheet": "knobs/formanto/formanto_128_frames_16x8.png",
+      "frame_count": 128,
+      "columns": 16,
+      "rows": 8,
+      "frame_size_px": [
+        173,
+        173
+      ],
+      "pivot_px": [
+        86.5,
+        86.5
+      ],
+      "zero_angle_frame": 64,
+      "rotation_range_degrees": [
+        -135,
+        132.89
+      ],
+      "coordinate_in_original_image": [
+        488,
+        145,
+        173,
+        173
+      ]
+    },
+    "fine": {
+      "base_file": "knobs/fine/fine_base_174.png",
+      "pointer_file": "knobs/fine/fine_pointer_up_174.png",
+      "sprite_sheet": "knobs/fine/fine_128_frames_16x8.png",
+      "frame_count": 128,
+      "columns": 16,
+      "rows": 8,
+      "frame_size_px": [
+        173,
+        173
+      ],
+      "pivot_px": [
+        86.5,
+        86.5
+      ],
+      "zero_angle_frame": 64,
+      "rotation_range_degrees": [
+        -135,
+        132.89
+      ],
+      "coordinate_in_original_image": [
+        770,
+        145,
+        173,
+        173
+      ]
+    }
+  },
+  "controls": {
+    "core_default": [
+      874,
+      31,
+      1020,
+      81
+    ],
+    "quality_dropdown": [
+      302,
+      383,
+      555,
+      449
+    ],
+    "voice_range_dropdown": [
+      590,
+      383,
+      843,
+      449
+    ],
+    "preserve_off": [
+      447,
+      465,
+      516,
+      509
+    ]
+  },
+  "labels": {
+    "title_expitch": {
+      "original_image_rect": [
+        508,
+        39,
+        638,
+        69
+      ],
+      "png_size_px": [
+        130,
+        30
+      ]
+    },
+    "label_pitch": {
+      "original_image_rect": [
+        260,
+        118,
+        318,
+        140
+      ],
+      "png_size_px": [
+        58,
+        22
+      ]
+    },
+    "label_formanto": {
+      "original_image_rect": [
+        520,
+        119,
+        630,
+        140
+      ],
+      "png_size_px": [
+        110,
+        21
+      ]
+    },
+    "label_fine": {
+      "original_image_rect": [
+        836,
+        119,
+        884,
+        140
+      ],
+      "png_size_px": [
+        48,
+        21
+      ]
+    },
+    "value_pitch_mix": {
+      "original_image_rect": [
+        226,
+        333,
+        255,
+        350
+      ],
+      "png_size_px": [
+        29,
+        17
+      ]
+    },
+    "value_pitch_100": {
+      "original_image_rect": [
+        311,
+        334,
+        356,
+        349
+      ],
+      "png_size_px": [
+        45,
+        15
+      ]
+    },
+    "value_formanto_mix": {
+      "original_image_rect": [
+        511,
+        334,
+        540,
+        350
+      ],
+      "png_size_px": [
+        29,
+        16
+      ]
+    },
+    "value_formanto_100": {
+      "original_image_rect": [
+        595,
+        334,
+        640,
+        349
+      ],
+      "png_size_px": [
+        45,
+        15
+      ]
+    },
+    "value_fine_output": {
+      "original_image_rect": [
+        776,
+        334,
+        836,
+        354
+      ],
+      "png_size_px": [
+        60,
+        20
+      ]
+    },
+    "value_fine_db": {
+      "original_image_rect": [
+        880,
+        334,
+        933,
+        350
+      ],
+      "png_size_px": [
+        53,
+        16
+      ]
+    },
+    "label_preserve_formants": {
+      "original_image_rect": [
+        529,
+        476,
+        687,
+        493
+      ],
+      "png_size_px": [
+        158,
+        17
+      ]
+    }
+  }
+}

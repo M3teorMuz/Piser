@@ -1,0 +1,23 @@
+{
+  "font_recommendation": {
+    "reference_look": "SF Pro Display-like rounded modern sans",
+    "windows_juce_fallback": "Inter",
+    "weights": [
+      "Regular 400",
+      "Medium 500"
+    ]
+  },
+  "colors_hex": {
+    "panel_base": "#1B1C27",
+    "panel_highlight": "#292B3A",
+    "panel_edge_lavender": "#77739D",
+    "primary_text": "#D9DBEA",
+    "secondary_text": "#A7AABE",
+    "muted_text": "#777B92",
+    "accent_purple": "#8A6AFF",
+    "accent_purple_dark": "#6A50D9",
+    "knob_surface": "#242633",
+    "toggle_off": "#54596A",
+    "toggle_on": "#8A6AFF"
+  }
+}
